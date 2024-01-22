@@ -3,8 +3,8 @@ If you worked together with someone in this project, please find the names below
 <details>
 <summary>Snowflake team</summary>
 <br>
-- [ ] JennieDalgren
   
+- [ ] JennieDalgren
 - [ ] HIPPIEKICK
 </details>
 
