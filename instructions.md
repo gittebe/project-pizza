@@ -80,4 +80,3 @@ We recommend creating an extra script.js file under the name `switch.js` to have
 
 Refactoring the code using a switch case approach not only showcases your coding versatility but also contributes to writing cleaner and more efficient code. It's a valuable skill that can lead to more readable and maintainable programs in the long run.
 
-test test test
