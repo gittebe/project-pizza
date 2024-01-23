@@ -1,16 +1,5 @@
-If you worked together with someone in this project, please find the names below and check the boxes:
+## Individual projects
+If you worked alone on this project, please leave this file unchanged.
 
-<details>
-<summary>Snowflake team</summary>
-<br>
-  
-- [ ] JennieDalgren
-- [ ] HIPPIEKICK
-</details>
-
-<details>
-<summary>Another team</summary>
-<br>
-- [ ] Another-user
-- [ ] Another-user-2
-</details>
+## Pair/group projects
+If you worked together with someone on this project, please change the username(s) within these square brackets to the usernames' of the person/people you worked together with: [HIPPIEKICK, AntonellaMorittu, JennieDalgren]
