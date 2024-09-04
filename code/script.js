@@ -41,8 +41,6 @@ alert(
 
 // The second order
 
-let secondOrder
-
 //Pizza Type
 
 if (firstOrder === `Pizza`) {
@@ -115,7 +113,19 @@ alert(
 )
 
 // Step 4 - Age
-// Your code goes here
+let age = prompt(`To get the right size of your dish one last question: How old are you, ${name}?`)
+
 
 // Step 5 - Order confirmation
-// Your code goes here
+if (age > 15) {
+  alert(`Thank you! You like to order ${secondOrder} normal size.`)
+}
+
+else if (age < 15) {
+  alert(`Thank you. You like to order ${secondOrder} for kids`)
+}
+
+// else {
+
+// }
+
