@@ -10,30 +10,109 @@ const name = prompt(`Please enter your name:`)
 
 //Introduction
 alert(
-  `Hallo, ${name.toUpperCase()} Are you ready to order? - Click 'OK'.`
+  `Hallo, ${name} Are you ready to order? - Click 'OK'.`
 )
 
 // Submit food choice
 
-const foodChoice = prompt(`What would you like to order? Please enter the number: 
+let firstOrder = prompt(`What would you like to order? Please enter the number: 
   1 - Pizza
   2 - Pasta
   3 - Salad`)
 
 //The first order
 
-if (foodChoice == 1) {
-  alert(`You like to order Pizza. Great choice`)
+if (firstOrder === `1`) {
+  firstOrder = `Pizza`
 }
-else if (foodChoice == 2) {
-  alert(`Pasta, good choice`)
+else if (firstOrder === `2`) {
+  firstOrder = `Pasta`
 }
-else if (foodChoice == 3) {
-  alert(`A salad for you today`)
+else if (firstOrder === `3`) {
+  firstOrder = `Salad`
+}
+else {
+  firstOrder = `try again`
 }
 
+alert(
+  `Great choice! You selected ${firstOrder}`
+)
+
+// The second order
+
+let secondOrder
+
+//Pizza Type
+
+if (firstOrder === `Pizza`) {
+  secondOrder = prompt(`Which Pizza would you like to have today?
+  1 - Pizza Margherita
+  2 - Pizza Pepperoni
+  3 - Pizza Hawaiian`)
 
 
+  if (secondOrder === `1`) {
+    secondOrder = `Pizza Margherita`
+  }
+
+  else if (secondOrder === `2`) {
+    secondOrder = `Pizza Pepperoni`
+  }
+
+  else if (secondOrder === `3`) {
+    secondOrder = `Pizza Hawaiian`
+  }
+}
+
+// Pasta Type
+
+else if (firstOrder === `Pasta`) {
+  secondOrder = prompt(`What kind of Pasta would you like to eat today? Plase write the number:
+    1 - Spaghetti
+    2 - Carbonara
+    3 - Lasagna`)
+
+  if (secondOrder === `1`) {
+    secondOrder = `Spaghetti`
+  }
+  else if (secondOrder === `2`) {
+    secondOrder = `Carbonara`
+  }
+  else if (secondOrder === `3`) {
+    secondOrder = `Lasagna`
+  }
+  // else {
+  //   secondOrder = `no food`
+  // }
+
+}
+
+// Salad Type
+
+else if (firstOrder === `Salad`) {
+  secondOrder = prompt(`What kind of Salad would you love to order today? Please write the number:
+    1 - Greek Salad
+    2 - Fish Salad
+    3 - Chicken Salad`)
+
+  if (secondOrder === `1`) {
+    secondOrder = `Greek Salad`
+  }
+  else if (secondOrder === `2`) {
+    secondOrder = `Fish Salad`
+  }
+  else if (secondOrder === `3`) {
+    secondOrder = `Chicken Salad`
+  }
+  // else {
+  //   secondOrder = `no food`
+  // }
+}
+
+alert(
+  `Your order is ${secondOrder}`
+)
 
 // Step 4 - Age
 // Your code goes here
