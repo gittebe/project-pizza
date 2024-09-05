@@ -15,12 +15,18 @@ alert(
 
 // Submit food choice
 
-let firstOrder = prompt(`What would you like to order? Please enter the number: 
+let firstOrder = ``
+while (firstOrder !== `1` && firstOrder !== `2` && firstOrder !== `3`) {
+  firstOrder = prompt(`What would you like to order? Please enter the number: 
   1 - Pizza
   2 - Pasta
   3 - Salad`)
+  if (firstOrder !== `1` && firstOrder !== `2` && firstOrder !== `3`) {
+    alert(`Please enter a valid number: 1, 2, or 3)`)
+  }
+}
 
-//The first order
+//The first order confirmation
 
 if (firstOrder === `1`) {
   firstOrder = `Pizza`
@@ -31,23 +37,27 @@ else if (firstOrder === `2`) {
 else if (firstOrder === `3`) {
   firstOrder = `Salad`
 }
-else {
-  firstOrder = `try again`
-}
 
 alert(
   `Great choice! You selected ${firstOrder}`
 )
 
+
+
 // The second order
 
 //Pizza Type
-
+secondOrder = ``
 if (firstOrder === `Pizza`) {
-  secondOrder = prompt(`Which Pizza would you like to have today?
+  while (secondOrder !== `1` && secondOrder !== `2` && secondOrder !== `3`) {
+    secondOrder = prompt(`What would you like to order? Please choose and type the number:
   1 - Pizza Margherita
   2 - Pizza Pepperoni
   3 - Pizza Hawaiian`)
+    if (secondOrder !== `1` && secondOrder !== `2` && secondOrder !== `3`) {
+      alert(`Pease enter a valid number: 1, 2, or 3`)
+    }
+  }
 
 
   if (secondOrder === `1`) {
@@ -63,13 +73,20 @@ if (firstOrder === `Pizza`) {
   }
 }
 
+
 // Pasta Type
 
 else if (firstOrder === `Pasta`) {
-  secondOrder = prompt(`What kind of Pasta would you like to eat today? Plase write the number:
+  while (secondOrder !== `1` && secondOrder !== `2` && secondOrder !== `3`) {
+    secondOrder = prompt(`What kind of Pasta would you like to eat today? Plase write the number:
     1 - Spaghetti
     2 - Carbonara
     3 - Lasagna`)
+    if (secondOrder !== `1` && secondOrder !== `2` && secondOrder !== `3`) {
+      alert(`Please enter a valid number: 1, 2, or 3!`)
+    }
+  }
+
 
   if (secondOrder === `1`) {
     secondOrder = `Spaghetti`
@@ -80,19 +97,21 @@ else if (firstOrder === `Pasta`) {
   else if (secondOrder === `3`) {
     secondOrder = `Lasagna`
   }
-  // else {
-  //   secondOrder = `no food`
-  // }
-
 }
 
 // Salad Type
 
 else if (firstOrder === `Salad`) {
-  secondOrder = prompt(`What kind of Salad would you love to order today? Please write the number:
+  while (secondOrder !== `1` && secondOrder !== `2` && secondOrder !== `3`) {
+    secondOrder = prompt(`What kind of Salad would you love to order today? Please write the number:
     1 - Greek Salad
     2 - Fish Salad
     3 - Chicken Salad`)
+    if (secondOrder !== `1` && secondOrder !== `2` && secondOrder !== `3`) {
+      alert(`Please enter a valid number: 1, 2, or 3!`)
+    }
+  }
+
 
   if (secondOrder === `1`) {
     secondOrder = `Greek Salad`
@@ -103,29 +122,26 @@ else if (firstOrder === `Salad`) {
   else if (secondOrder === `3`) {
     secondOrder = `Chicken Salad`
   }
-  // else {
-  //   secondOrder = `no food`
-  // }
 }
 
 alert(
-  `Your order is ${secondOrder}`
+  `Great choice. You would like to have ${secondOrder}`
 )
 
 // Step 4 - Age
 let age = prompt(`To get the right size of your dish one last question: How old are you, ${name}?`)
 
 
-// Step 5 - Order confirmation
-if (age > 15) {
-  alert(`Thank you! You like to order ${secondOrder} normal size.`)
+// Order
+
+if (age = 13 | age > 13) {
+  alert(`Thank you! You like to order ${secondOrder} normal size. Click 'Ok' to order`)
 }
 
-else if (age < 15) {
-  alert(`Thank you. You like to order ${secondOrder} for kids`)
+else if (age < 13) {
+  alert(`Thank you. You like to order a kid's menu ${secondOrder}. Click 'ok' to order`)
 }
 
-// else {
+// Order confirmation
 
-// }
-
+alert(`Thank you for your order!`)
