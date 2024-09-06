@@ -9,5 +9,4 @@ I used if, else-if and else statements to make choices and I used while statemen
 Challenging for me was to think through the different options and how to organize and write them in a good way.
 
 ## View it live
-
-(https://app.netlify.com/sites/pizza-pasta-salad/overview)
+https://pizza-pasta-salad.netlify.app/
