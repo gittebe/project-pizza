@@ -61,6 +61,4 @@ if (age <= 13) {
 } else {
     alert(`You like to order a big ${orderConfirmation}. Click 'ok' to confirm your order`)
 }
-
-
 alert(`Thank you for your order!`)

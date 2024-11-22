@@ -1,5 +1,3 @@
-
-
 // Welcome 
 alert(
   `Welcome to our Javascript Pizzeria. Ready to Start? - Click 'OK' to begin.`
@@ -14,7 +12,6 @@ alert(
 )
 
 // Submit food choice
-
 let firstOrder = ''
 while (firstOrder !== '1' && firstOrder !== '2' && firstOrder !== '3') {
   firstOrder = prompt(`What would you like to order? Please enter the number: 
@@ -27,7 +24,6 @@ while (firstOrder !== '1' && firstOrder !== '2' && firstOrder !== '3') {
 }
 
 //The first order confirmation
-
 if (firstOrder === '1') {
   firstOrder = 'Pizza'
 }
@@ -37,13 +33,11 @@ else if (firstOrder === '2') {
 else if (firstOrder === '3') {
   firstOrder = 'Salad'
 }
-
 alert(
   `You would like to have ${firstOrder}. Is that correct?`
 )
 
 // The second order
-
 //Pizza Type
 secondOrder = ''
 if (firstOrder === 'Pizza') {
@@ -57,23 +51,18 @@ if (firstOrder === 'Pizza') {
     }
   }
 
-
   if (secondOrder === '1') {
     secondOrder = 'Pizza Margherita'
   }
-
   else if (secondOrder === '2') {
     secondOrder = 'Pizza Pepperoni'
   }
-
   else if (secondOrder === '3') {
     secondOrder = 'Pizza Hawaiian'
   }
 }
 
-
 // Pasta Type
-
 else if (firstOrder === 'Pasta') {
   while (secondOrder !== '1' && secondOrder !== '2' && secondOrder !== '3') {
     secondOrder = prompt(`What kind of Pasta would you like to order today? Please write the number:
@@ -97,7 +86,6 @@ else if (firstOrder === 'Pasta') {
 }
 
 // Salad Type
-
 else if (firstOrder === 'Salad') {
   while (secondOrder !== '1' && secondOrder !== '2' && secondOrder !== '3') {
     secondOrder = prompt(`What kind of Salad would you love to order today? Please write the number:
@@ -108,7 +96,6 @@ else if (firstOrder === 'Salad') {
       alert(`Please enter a valid number: 1, 2, or 3!`)
     }
   }
-
 
   if (secondOrder === '1') {
     secondOrder = 'Greek Salad'
@@ -126,7 +113,7 @@ alert(
 )
 
 // Step 4 - Age
-let age = prompt(`To know the right size of your meal one last question: How old are you, ${name}?`)
+let age = prompt(`To help us suggest the perfect meal size for you, could you please tell us your age, ${name}?`)
 
 // Check if age is not a number
 while (isNaN(age)) {
@@ -141,7 +128,5 @@ else if (age < 13) {
   alert(`Thank you.You like to order a kid's ${secondOrder}. Click 'ok' to order`)
 }
 
-
 // Order confirmation
-
 alert(`Thank you for your order!`)
